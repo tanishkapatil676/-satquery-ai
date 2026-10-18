@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-from src.satquery.core.exceptions import ValidationError
-from src.satquery.core.config import settings
+from satquery.core.exceptions import ValidationError
+from satquery.core.config import settings
 
 class FileValidator:
     @staticmethod

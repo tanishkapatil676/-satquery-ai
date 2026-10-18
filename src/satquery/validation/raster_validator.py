@@ -1,8 +1,8 @@
 import rasterio
 import math
-from src.satquery.core.exceptions import ValidationError, RasterReadError
-from src.satquery.core.config import settings
-from src.satquery.schemas.raster import RasterMetadataSchema, RasterBoundsSchema
+from satquery.core.exceptions import ValidationError, RasterReadError
+from satquery.core.config import settings
+from satquery.schemas.raster import RasterMetadataSchema, RasterBoundsSchema
 
 class RasterValidator:
     @staticmethod

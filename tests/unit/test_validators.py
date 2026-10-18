@@ -2,9 +2,9 @@ import pytest
 import numpy as np
 import rasterio
 from rasterio.transform import from_origin
-from src.satquery.core.exceptions import ValidationError
-from src.satquery.validation.file_validator import FileValidator
-from src.satquery.validation.raster_validator import RasterValidator
+from satquery.core.exceptions import ValidationError
+from satquery.validation.file_validator import FileValidator
+from satquery.validation.raster_validator import RasterValidator
 
 @pytest.fixture
 def synthetic_geotiff(tmp_path):
@@ -27,7 +27,6 @@ def synthetic_geotiff(tmp_path):
     return str(filepath)
 
 def test_file_validator_success(synthetic_geotiff):
-    # Should not raise exception
     FileValidator.validate(synthetic_geotiff)
 
 def test_file_validator_missing():
