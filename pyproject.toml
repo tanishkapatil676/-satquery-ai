@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satquery"
+version = "1.0.0"
+description = "Enterprise Geospatial SaaS Platform for ISRO SIH 2026"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "rasterio",
+    "shapely",
+    "scipy",
+    "pydantic",
+    "streamlit",
+    "requests"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

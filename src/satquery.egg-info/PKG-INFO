@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: satquery
+Version: 1.0.0
+Summary: Enterprise Geospatial SaaS Platform for ISRO SIH 2026
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: rasterio
+Requires-Dist: shapely
+Requires-Dist: scipy
+Requires-Dist: pydantic
+Requires-Dist: streamlit
+Requires-Dist: requests
