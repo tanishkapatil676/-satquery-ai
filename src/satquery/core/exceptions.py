@@ -19,3 +19,14 @@ class RasterReadError(SatQueryError):
 
     def __init__(self, message: str, code: str = "RASTER_READ_ERROR"):
         super().__init__(message, code)
+
+
+class ConfigurationError(SatQueryError):
+    """Raised when configuration or registry parsing fails."""
+
+    def __init__(
+        self,
+        message: str,
+        code: str = "CONFIGURATION_ERROR",
+    ):
+        super().__init__(message, code)

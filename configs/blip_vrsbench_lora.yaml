@@ -1,0 +1,25 @@
+experiment_name: satquery_blip_vrsbench_lora
+base_model: Salesforce/blip-image-captioning-base
+target_dataset: xiang709/VRSBench
+adaptation_method: LoRA (Low-Rank Adaptation)
+lora_config:
+  r: 16
+  lora_alpha: 32
+  target_modules:
+  - query
+  - value
+  lora_dropout: 0.05
+training_hyperparameters:
+  learning_rate: 0.0002
+  batch_size: 4
+  epochs: 3
+  max_length: 64
+  seed: 42
+splits:
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+metrics:
+- BLEU-4
+- CIDEr
+- METEOR

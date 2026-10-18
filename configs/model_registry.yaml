@@ -1,0 +1,11 @@
+
+models:
+  - task: vqa
+    model_id: "Salesforce/blip-vqa-base"
+    enabled: true
+    requires_question: true
+
+  - task: captioning
+    model_id: "Salesforce/blip-image-captioning-base"
+    enabled: true
+    requires_question: false
